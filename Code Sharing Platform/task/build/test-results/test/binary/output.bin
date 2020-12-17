@@ -1,0 +1,47 @@
+[1;31m
+Start test 1[0m
+
+(  .   ____          _            __ _ _
+) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+*( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
++ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+*  '  |____| .__|_| |_|_| |_\__, | / / / /
+) =========|_|==============|___/=/_/_/_/
++ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+ã2020-12-17 22:57:36.229  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on Brian.local with PID 3885 (started by macbook in /Users/namvdo/Desktop/projects/java/Code Sharing Platform/Code Sharing Platform/task)
+•2020-12-17 22:57:36.257  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+ë2020-12-17 22:57:39.426  INFO 3885 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+~2020-12-17 22:57:39.446  INFO 3885 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+î2020-12-17 22:57:39.448  INFO 3885 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+ó2020-12-17 22:57:39.756  INFO 3885 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2020-12-17 22:57:39.757  INFO 3885 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3231 ms
+õ2020-12-17 22:57:40.477  INFO 3885 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ö2020-12-17 22:57:41.113  INFO 3885 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+†2020-12-17 22:57:41.213  INFO 3885 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+´2020-12-17 22:57:41.236  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 10.841 seconds (JVM running for 12.186)
+û2020-12-17 22:57:41.960  INFO 3885 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+ç2020-12-17 22:57:41.963  INFO 3885 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2020-12-17 22:57:41.977  INFO 3885 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+[1;31m
+Start test 2[0m
+[1;31m
+Start test 3[0m
+[1;31m
+Start test 4[0m
+[1;31m
+Start test 5[0m
+[1;31m
+Start test 6[0m
+[1;31m
+Start test 7[0m
+[1;31m
+Start test 8[0m
+[1;31m
+Start test 9[0m
+[1;31m
+Start test 10[0m
+[1;31m
+Start test 11[0m
+[1;31m
+Start test 12[0m
