@@ -1,17 +1,10 @@
 
-a
-java:S1128	"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8şİãÖæ.
-C
-java:S1481+"&Remove this unused "x" local variable.(ßóÆ8•‡ òæ.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(Õ¹äù8®ÛÏÜç.
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(×È»Ÿ8®ÛÏÜç.
+U	java:S106="9Replace this use of System.out or System.err by a logger.(µóû¼8®ÛÏÜç.
 M
-java:S1481,"0Remove this unused "currentTime" local variable.(±€Ä8™ïØÒæ.
-X
-java:S1128"6Remove this unused import 'java.net.http.HttpRequest'.(ş€ŠÍşÿÿÿÿ8“‘®Óæ.
-Z
-java:S1117""8Rename "code" which hides the field declared at line 29.(‰å«…ûÿÿÿÿ8©ÑÃĞæ.
-R
-java:S1854+"5Remove this useless assignment to local variable "x".(ßóÆ8•‡ òæ.
-‡
-java:S1488t"eImmediately return this expression instead of assigning it to the temporary variable "formattedTime".(‡¶‹óøÿÿÿÿ8§µÚÒæ.
-\
-java:S1854,"?Remove this useless assignment to local variable "currentTime".(±€Ä8™ïØÒæ.
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ŠÅÜç.
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(ç“Ìóÿÿÿÿÿ8ğ‡ÏÛç.
+h
+java:S1128"FRemove this unused import 'java.util.concurrent.atomic.AtomicInteger'.(¿êäœøÿÿÿÿ8ŒÚòÜç.
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(ç“Ìóÿÿÿÿÿ8³ªÏÛç.

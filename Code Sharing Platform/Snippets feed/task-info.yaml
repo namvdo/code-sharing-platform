@@ -413,6 +413,102 @@ files:
         }
     }
   learner_created: false
+- name: src/entity/CodeResponse.java
+  visible: true
+  text: |
+    package entity;
+
+
+    import java.time.LocalDateTime;
+
+    /**
+     * @author namvdo
+     */
+
+    public class CodeResponse {
+
+        private String code;
+        private LocalDateTime date;
+        public CodeResponse() {
+        }
+
+        private CodeResponse(CodeBuilder builder) {
+            this.code = builder.codeFragment;
+            this.date = builder.dateTime;
+        }
+
+        public static class CodeBuilder {
+            private final String codeFragment;
+            private LocalDateTime dateTime;
+
+            public CodeBuilder(String codeFragment) {
+                this.codeFragment = codeFragment;
+            }
+
+            public CodeBuilder dateTime(LocalDateTime date) {
+                this.dateTime = date;
+                return this;
+            }
+
+            public CodeResponse build() {
+                return new CodeResponse(this);
+            }
+        }
+
+        public String getCode() {
+            return code;
+        }
+
+        public LocalDateTime getDate() {
+            return date;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public void setDate(LocalDateTime date) {
+            this.date = date;
+        }
+    }
+  learner_created: true
+- name: src/resources/static/style.css
+  visible: true
+  learner_created: true
+- name: src/resources/static/script.js
+  visible: true
+  learner_created: true
+- name: src/resources/templates/post_code.ftlh
+  visible: true
+  learner_created: true
+- name: src/resources/templates/index.ftlh
+  visible: true
+  learner_created: true
+- name: src/service/CodeSharingService.java
+  visible: true
+  learner_created: true
+- name: src/util/Util.java
+  visible: true
+  text: |
+    package util;
+
+    /**
+     * @author namvdo
+     */
+    public class Template {
+        public static final String CODE = "    public static void main(String[] args) {\n" +
+                "        SpringApplication.run(CodeSharingPlatform.class, args);\n" +
+                "    }\n";
+        public static final String DATETIME_FORMAT = "yyyy/MM/dd HH:mm:ss";
+        private Template() {
+
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/130/stages/694/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/130/stages/694/implement">JetBrains
+    Academy</a>
+  time: Sun, 20 Dec 2020 05:32:22 UTC
 record: -1

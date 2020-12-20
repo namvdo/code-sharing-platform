@@ -9,10 +9,10 @@ stages:
   is_completed: true
 - id: 693
   step: 11028
-  is_completed: false
+  is_completed: true
 - id: 694
   step: 11029
-  is_completed: false
+  is_completed: true
 - id: 695
   step: 11030
   is_completed: false
@@ -59,6 +59,10 @@ topics:
     theory_id: 10996
   - title: Introduction to Spring Boot
     theory_id: 7944
+  - title: Write, compile, and run
+    theory_id: 3739
+  - title: JVM, JRE, and JDK
+    theory_id: 3499
   - title: What is an exception
     theory_id: 3497
   - title: NPE
@@ -151,10 +155,6 @@ topics:
     theory_id: 3801
   - title: IDEA Basics
     theory_id: 5819
-  - title: Write, compile, and run
-    theory_id: 3739
-  - title: JVM, JRE, and JDK
-    theory_id: 3499
   - title: Errors in programs
     theory_id: 3536
   - title: Defining classes
@@ -280,6 +280,8 @@ topics:
     theory_id: 3597
   - title: Interface
     theory_id: 3615
+  - title: Default methods
+    theory_id: 11354
   - title: Lambda expressions
     theory_id: 11635
   - title: Method references

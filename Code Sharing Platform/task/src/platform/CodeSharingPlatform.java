@@ -1,114 +1,79 @@
 package platform;
 
-import com.google.gson.JsonObject;
 import entity.CodeResponse;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-import util.Template;
+import service.CodeSharingService;
 
 import javax.servlet.http.HttpServletResponse;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.List;
 
 /**
  * @author namvdo
  */
 @SpringBootApplication
-@RestController
+@Controller
 public class CodeSharingPlatform {
-    private CodeResponse code;
-    Logger logger = Logger.getLogger(CodeSharingPlatform.class.getName());
-    @GetMapping(path = "/code")
-    public String responseWithHtml(HttpServletResponse response) {
-        response.setContentType("text/html");
-        String codeFragment = getTheCode();
-        String time = getTheTime();
+    private final CodeSharingService service = new CodeSharingService();
 
-        return injectCodeToHtml(codeFragment, time);
+    public static void main(String[] args) {
+        SpringApplication.run(CodeSharingPlatform.class, args);
     }
 
-    @GetMapping(path = "/api/code")
+    @GetMapping(path = "/code/{n}")
+    public @ResponseBody
+    String responseWithHtml(HttpServletResponse response, @PathVariable String n) {
+        response.setContentType("text/html");
+        int index = Integer.parseInt(n);
+        return service.getCodeAtPos(index);
+    }
+
+    @GetMapping(path = "/api/code/{n}", produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
-    public String responseWithJson(HttpServletResponse response) {
-        response.setContentType("application/json");
-        response.setStatus(200);
-        JsonObject json = new JsonObject();
-        String codeFragment = getTheCode();
-        String time = getTheTime();
-        json.addProperty("code", codeFragment);
-        json.addProperty("date", time);
-        return json.toString();
+    public @ResponseBody
+    String responseWithJson(@PathVariable String n) {
+        int index = Integer.parseInt(n);
+        return service.getCodeAtPostJson(index);
     }
 
     @GetMapping(path = "/code/new")
     public String responseWithForm() {
-        return "<html lang=\"en\">\n" +
-                "<head>\n" +
-                "    <meta charset=\"UTF-8\">\n" +
-                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-                "    <title>Create</title>\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "    <form action=\"/api/code/new\" method=\"POST\">\n" +
-                "        <textarea name=\"code\" id=\"code_snippet\" cols=\"30\" rows=\"10\"></textarea>\n" +
-                "        <button id=\"send_snippet\" type=\"submit\" onclick=\"send()\">Submit</button>\n" +
-                "    </form> \n" +
-                "    <script src=\"/script/script.js\"></script>\n" +
-                "</body>\n" +
-                "</html>";
+        return "/post_code";
     }
 
-    @PostMapping(path = "/api/code/new")
-    public Map<String, String> makeCodeChange(@RequestBody CodeResponse body) {
-        if (code == null) {
-            code = new CodeResponse();
+    @PostMapping(path = "/api/code/new", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public @ResponseBody
+    String addNewCodeWithJson(@RequestBody CodeResponse body) {
+        if (service.addNewCode(body)) {
+            return service.responseToAddCode(service.getLatestId() - 1);
         }
-        code.setCode(body.getCode() == null ? "" : body.getCode());
-        code.setDate(body.getDate() == null ? LocalDateTime.now() : body.getDate());
-        return new HashMap<>(5);
+        return "";
     }
 
-    private String injectCodeToHtml(String code, String timeFormatted) {
-        return "<html>\n" +
-                "<head>\n" +
-                "    <title>Code</title>\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "    <span id=\"load_date\">" + timeFormatted +
-                "</span>\n" +
-                "    <pre id=\"code_snippet\">" + code + "</pre>\n" +
-                "</body>\n" +
-                "</html>";
-    }
-
-    private String getTheCode() {
-        String codeTemplate = Template.CODE;
-        if (code == null) {
-            code = new CodeResponse.CodeBuilder(codeTemplate).dateTime(LocalDateTime.now()).build();
+    @PostMapping(path = "/api/code/new", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public @ResponseBody
+    String addNewCodeWithForm(CodeResponse newCode) {
+        if (service.addNewCode(newCode)) {
+            return service.responseToAddCode(service.getLatestId() - 1);
         }
-        return code.getCode();
+        return "";
     }
 
-    private String getTheTime() {
-        if (code == null) {
-            return formatDateTime(LocalDateTime.now());
-        } else {
-            return formatDateTime(code.getDate());
-        }
+    @GetMapping(path = "/code/latest")
+    public String getTop10LatestCode(@ModelAttribute("model") ModelMap model) {
+        model.put("codes", service.getTop10Latest());
+        return "index";
     }
 
-    private String formatDateTime(LocalDateTime dateTime) {
-        DateTimeFormatter format = DateTimeFormatter.ofPattern(Template.DATETIME_FORMAT);
-        return dateTime.format(format);
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(CodeSharingPlatform.class, args);
+    @GetMapping(path = "/api/code/latest", produces = "application/json")
+    public @ResponseBody
+    List<CodeResponse> getTop10LatestCodeJson() {
+        return service.getTop10Latest();
     }
 
 }

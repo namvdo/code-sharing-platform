@@ -9,20 +9,21 @@
 ) =========|_|==============|___/=/_/_/_/
 + :: Spring Boot ::        (v2.3.3.RELEASE)
 
-ã2020-12-17 22:57:36.229  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on Brian.local with PID 3885 (started by macbook in /Users/namvdo/Desktop/projects/java/Code Sharing Platform/Code Sharing Platform/task)
-•2020-12-17 22:57:36.257  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
-ë2020-12-17 22:57:39.426  INFO 3885 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-~2020-12-17 22:57:39.446  INFO 3885 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-î2020-12-17 22:57:39.448  INFO 3885 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-ó2020-12-17 22:57:39.756  INFO 3885 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-§2020-12-17 22:57:39.757  INFO 3885 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3231 ms
-õ2020-12-17 22:57:40.477  INFO 3885 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-ö2020-12-17 22:57:41.113  INFO 3885 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-†2020-12-17 22:57:41.213  INFO 3885 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-´2020-12-17 22:57:41.236  INFO 3885 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 10.841 seconds (JVM running for 12.186)
-û2020-12-17 22:57:41.960  INFO 3885 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-ç2020-12-17 22:57:41.963  INFO 3885 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ü2020-12-17 22:57:41.977  INFO 3885 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+ç2020-12-20 12:32:14.076  INFO 20717 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on Brian.local with PID 20717 (started by macbook in /Users/namvdo/Desktop/projects/java/Code Sharing Platform/Code Sharing Platform/task)
+¶2020-12-20 12:32:14.087  INFO 20717 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+í2020-12-20 12:32:16.601  INFO 20717 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-20 12:32:16.622  INFO 20717 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-12-20 12:32:16.623  INFO 20717 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+ò2020-12-20 12:32:16.856  INFO 20717 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2020-12-20 12:32:16.856  INFO 20717 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2645 ms
+ú2020-12-20 12:32:17.581  INFO 20717 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+â2020-12-20 12:32:17.802  INFO 20717 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+õ2020-12-20 12:32:18.865  INFO 20717 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-12-20 12:32:19.016  INFO 20717 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+¨2020-12-20 12:32:19.082  INFO 20717 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 11.074 seconds (JVM running for 12.875)
+ü2020-12-20 12:32:20.103  INFO 20717 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-12-20 12:32:20.104  INFO 20717 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2020-12-20 12:32:20.120  INFO 20717 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
 [1;31m
 Start test 2[0m
 [1;31m
@@ -45,3 +46,89 @@
 Start test 11[0m
 [1;31m
 Start test 12[0m
+[1;31m
+Start test 13[0m
+[1;31m
+Start test 14[0m
+[1;31m
+Start test 15[0m
+[1;31m
+Start test 16[0m
+[1;31m
+Start test 17[0m
+[1;31m
+Start test 18[0m
+[1;31m
+Start test 19[0m
+[1;31m
+Start test 20[0m
+[1;31m
+Start test 21[0m
+[1;31m
+Start test 22[0m
+[1;31m
+Start test 23[0m
+[1;31m
+Start test 24[0m
+[1;31m
+Start test 25[0m
+[1;31m
+Start test 26[0m
+[1;31m
+Start test 27[0m
+[1;31m
+Start test 28[0m
+[1;31m
+Start test 29[0m
+[1;31m
+Start test 30[0m
+[1;31m
+Start test 31[0m
+[1;31m
+Start test 32[0m
+[1;31m
+Start test 33[0m
+[1;31m
+Start test 34[0m
+[1;31m
+Start test 35[0m
+[1;31m
+Start test 36[0m
+[1;31m
+Start test 37[0m
+[1;31m
+Start test 38[0m
+[1;31m
+Start test 39[0m
+[1;31m
+Start test 40[0m
+[1;31m
+Start test 41[0m
+[1;31m
+Start test 42[0m
+[1;31m
+Start test 43[0m
+[1;31m
+Start test 44[0m
+[1;31m
+Start test 45[0m
+[1;31m
+Start test 46[0m
+[1;31m
+Start test 47[0m
+[1;31m
+Start test 48[0m
+[1;31m
+Start test 49[0m
+[1;31m
+Start test 50[0m
+[1;31m
+Start test 51[0m
+[1;31m
+Start test 52[0m
+[1;31m
+Start test 53[0m
+[1;31m
+Start test 54[0m
+[1;31m
+Start test 55[0m

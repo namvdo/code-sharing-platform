@@ -1,0 +1,23 @@
+
+v	java:S116"URename this field "WEB_LATEST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¶™ëýÿÿÿÿ8¹„žËç.
+o	java:S116"SRename this field "WEB_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¦ô¯8¹„žËç.
+C
+java:S1170"!Make this final field static too.(ÝšÂüùÿÿÿÿ8¹„žËç.
+C
+java:S1170"!Make this final field static too.(“¶™ëýÿÿÿÿ8¹„žËç.
+L
+java:S1128	"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8äŽÏÜç.
+v	java:S116"URename this field "API_LATEST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÝšÂüùÿÿÿÿ8¹„žËç.
+x	java:S116"WRename this field "API_CODE_NEW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìœ™·ýÿÿÿÿ8¹„žËç.
+s	java:S116"WRename this field "WEB_CODE_NEW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜŽ³÷8¹„žËç.
+>
+java:S1170"!Make this final field static too.(ÜŽ³÷8¹„žËç.
+>
+java:S1170"!Make this final field static too.(£¦ô¯8¹„žËç.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8á½¹Ùç.
+C
+java:S1170"!Make this final field static too.(§ìø£úÿÿÿÿ8¹„žËç.
+C
+java:S1170"!Make this final field static too.(Ìœ™·ýÿÿÿÿ8¹„žËç.
+t	java:S116"SRename this field "API_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ìø£úÿÿÿÿ8¹„žËç.
