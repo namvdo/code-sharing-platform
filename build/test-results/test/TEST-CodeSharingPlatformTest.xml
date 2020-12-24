@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CodeSharingPlatformTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-24T04:21:56" hostname="Brian.local" time="25.674">
+  <properties/>
+  <testcase name="start" classname="CodeSharingPlatformTest" time="25.674"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2020-12-24 11:22:03.223  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on Brian.local with PID 19556 (started by macbook in /Users/namvdo/Desktop/projects/java/Code Sharing Platform/Code Sharing Platform/task)
+2020-12-24 11:22:03.235  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+2020-12-24 11:22:04.573  INFO 19556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-24 11:22:04.651  INFO 19556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 1 JPA repository interfaces.
+2020-12-24 11:22:06.465  INFO 19556 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-24 11:22:06.487  INFO 19556 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 11:22:06.489  INFO 19556 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-24 11:22:06.834  INFO 19556 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 11:22:06.835  INFO 19556 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3462 ms
+2020-12-24 11:22:07.298  INFO 19556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-24 11:22:07.760  INFO 19556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-24 11:22:07.780  INFO 19556 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../snippets'
+2020-12-24 11:22:08.341  INFO 19556 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-24 11:22:08.446  INFO 19556 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-24 11:22:08.829  INFO 19556 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-24 11:22:09.110  INFO 19556 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-24 11:22:10.356  INFO 19556 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-24 11:22:10.371  INFO 19556 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 11:22:10.826  WARN 19556 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-24 11:22:11.089  INFO 19556 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 11:22:11.247  INFO 19556 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-24 11:22:11.941  INFO 19556 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-24 11:22:12.042  INFO 19556 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-12-24 11:22:12.076  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 14.94 seconds (JVM running for 17.335)
+2020-12-24 11:22:12.666  INFO 19556 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 11:22:12.667  INFO 19556 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 11:22:12.685  INFO 19556 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+?[1;31m
+Start test 2?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 3?[0m
+fuck code at pos: 0
+fuck record: Optional[CodeResponse{code='public static void ...', date=2020-12-24T11:22:13.285604}]
+?[1;31m
+Start test 4?[0m
+?[1;31m
+Start test 5?[0m
+fuck get top 10
+?[1;31m
+Start test 6?[0m
+fuck get top 10
+?[1;31m
+Start test 7?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 8?[0m
+fuck code at pos: 0
+fuck record: Optional[CodeResponse{code='public static void ...', date=2020-12-24T11:22:13.285604}]
+?[1;31m
+Start test 9?[0m
+?[1;31m
+Start test 10?[0m
+fuck code at pos: 1
+fuck record: Optional[CodeResponse{code='class Code { ...', date=2020-12-24T11:22:13.608771}]
+?[1;31m
+Start test 11?[0m
+?[1;31m
+Start test 12?[0m
+fuck get top 10
+?[1;31m
+Start test 13?[0m
+fuck get top 10
+?[1;31m
+Start test 14?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 15?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 16?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 17?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 18?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 19?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 20?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 21?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 22?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 23?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 24?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 25?[0m
+fuck add new code
+fuck : resposeaddcode
+?[1;31m
+Start test 26?[0m
+fuck code at pos: 0
+fuck record: Optional[CodeResponse{code='public static void ...', date=2020-12-24T11:22:13.285604}]
+?[1;31m
+Start test 27?[0m
+?[1;31m
+Start test 28?[0m
+fuck code at pos: 1
+fuck record: Optional[CodeResponse{code='class Code { ...', date=2020-12-24T11:22:13.608771}]
+?[1;31m
+Start test 29?[0m
+?[1;31m
+Start test 30?[0m
+fuck code at pos: 2
+fuck record: Optional[CodeResponse{code='Snippet #3', date=2020-12-24T11:22:13.718789}]
+?[1;31m
+Start test 31?[0m
+?[1;31m
+Start test 32?[0m
+fuck code at pos: 3
+fuck record: Optional[CodeResponse{code='Snippet #4', date=2020-12-24T11:22:13.733206}]
+?[1;31m
+Start test 33?[0m
+?[1;31m
+Start test 34?[0m
+fuck code at pos: 4
+fuck record: Optional[CodeResponse{code='Snippet #5', date=2020-12-24T11:22:13.752511}]
+?[1;31m
+Start test 35?[0m
+?[1;31m
+Start test 36?[0m
+fuck code at pos: 5
+fuck record: Optional[CodeResponse{code='Snippet #6', date=2020-12-24T11:22:13.769094}]
+?[1;31m
+Start test 37?[0m
+?[1;31m
+Start test 38?[0m
+fuck code at pos: 6
+fuck record: Optional[CodeResponse{code='Snippet #7', date=2020-12-24T11:22:13.782187}]
+?[1;31m
+Start test 39?[0m
+?[1;31m
+Start test 40?[0m
+fuck code at pos: 7
+fuck record: Optional[CodeResponse{code='Snippet #8', date=2020-12-24T11:22:13.798155}]
+?[1;31m
+Start test 41?[0m
+?[1;31m
+Start test 42?[0m
+fuck code at pos: 8
+fuck record: Optional[CodeResponse{code='Snippet #9', date=2020-12-24T11:22:13.811251}]
+?[1;31m
+Start test 43?[0m
+?[1;31m
+Start test 44?[0m
+fuck code at pos: 9
+fuck record: Optional[CodeResponse{code='Snippet #10', date=2020-12-24T11:22:13.826782}]
+?[1;31m
+Start test 45?[0m
+?[1;31m
+Start test 46?[0m
+fuck code at pos: 10
+fuck record: Optional[CodeResponse{code='Snippet #11', date=2020-12-24T11:22:13.839132}]
+?[1;31m
+Start test 47?[0m
+?[1;31m
+Start test 48?[0m
+fuck code at pos: 11
+fuck record: Optional[CodeResponse{code='Snippet #12', date=2020-12-24T11:22:13.853406}]
+?[1;31m
+Start test 49?[0m
+?[1;31m
+Start test 50?[0m
+fuck code at pos: 12
+fuck record: Optional[CodeResponse{code='Snippet #13', date=2020-12-24T11:22:13.866414}]
+?[1;31m
+Start test 51?[0m
+?[1;31m
+Start test 52?[0m
+fuck code at pos: 13
+fuck record: Optional[CodeResponse{code='Snippet #14', date=2020-12-24T11:22:13.882549}]
+?[1;31m
+Start test 53?[0m
+?[1;31m
+Start test 54?[0m
+fuck get top 10
+?[1;31m
+Start test 55?[0m
+fuck get top 10
+?[1;31m
+Start test 56?[0m
+2020-12-24 11:22:14.793  INFO 19556 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-24 11:22:14.795  INFO 19556 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 11:22:14.799  INFO 19556 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-24 11:22:14.946  INFO 19556 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2020-12-24 11:22:20.039  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on Brian.local with PID 19556 (started by macbook in /Users/namvdo/Desktop/projects/java/Code Sharing Platform/Code Sharing Platform/task)
+2020-12-24 11:22:20.040  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+2020-12-24 11:22:20.401  INFO 19556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-24 11:22:20.410  INFO 19556 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2020-12-24 11:22:20.807  INFO 19556 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-24 11:22:20.810  INFO 19556 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 11:22:20.820  INFO 19556 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-24 11:22:20.882  INFO 19556 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 11:22:20.883  INFO 19556 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2020-12-24 11:22:20.977  INFO 19556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-12-24 11:22:20.988  INFO 19556 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-12-24 11:22:20.989  INFO 19556 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../snippets'
+2020-12-24 11:22:21.078  INFO 19556 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-24 11:22:21.088  INFO 19556 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-24 11:22:21.198  INFO 19556 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-24 11:22:21.199  INFO 19556 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-24 11:22:21.301  WARN 19556 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-24 11:22:21.372  INFO 19556 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 11:22:21.407  INFO 19556 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-24 11:22:21.676  INFO 19556 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-24 11:22:21.701  INFO 19556 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-12-24 11:22:21.711  INFO 19556 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 6.721 seconds (JVM running for 26.97)
+?[1;31m
+Start test 57?[0m
+2020-12-24 11:22:21.720  INFO 19556 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 11:22:21.721  INFO 19556 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 11:22:21.729  INFO 19556 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+fuck code at pos: 0
+fuck record: Optional[CodeResponse{code='public static void ...', date=2020-12-24T11:22:13.285604}]
+?[1;31m
+Start test 58?[0m
+?[1;31m
+Start test 59?[0m
+fuck code at pos: 1
+fuck record: Optional[CodeResponse{code='class Code { ...', date=2020-12-24T11:22:13.608771}]
+?[1;31m
+Start test 60?[0m
+?[1;31m
+Start test 61?[0m
+fuck code at pos: 2
+fuck record: Optional[CodeResponse{code='Snippet #3', date=2020-12-24T11:22:13.718789}]
+?[1;31m
+Start test 62?[0m
+?[1;31m
+Start test 63?[0m
+fuck code at pos: 3
+fuck record: Optional[CodeResponse{code='Snippet #4', date=2020-12-24T11:22:13.733206}]
+?[1;31m
+Start test 64?[0m
+?[1;31m
+Start test 65?[0m
+fuck code at pos: 4
+fuck record: Optional[CodeResponse{code='Snippet #5', date=2020-12-24T11:22:13.752511}]
+?[1;31m
+Start test 66?[0m
+?[1;31m
+Start test 67?[0m
+fuck code at pos: 5
+fuck record: Optional[CodeResponse{code='Snippet #6', date=2020-12-24T11:22:13.769094}]
+?[1;31m
+Start test 68?[0m
+?[1;31m
+Start test 69?[0m
+fuck code at pos: 6
+fuck record: Optional[CodeResponse{code='Snippet #7', date=2020-12-24T11:22:13.782187}]
+?[1;31m
+Start test 70?[0m
+?[1;31m
+Start test 71?[0m
+fuck code at pos: 7
+fuck record: Optional[CodeResponse{code='Snippet #8', date=2020-12-24T11:22:13.798155}]
+?[1;31m
+Start test 72?[0m
+?[1;31m
+Start test 73?[0m
+fuck code at pos: 8
+fuck record: Optional[CodeResponse{code='Snippet #9', date=2020-12-24T11:22:13.811251}]
+?[1;31m
+Start test 74?[0m
+?[1;31m
+Start test 75?[0m
+fuck code at pos: 9
+fuck record: Optional[CodeResponse{code='Snippet #10', date=2020-12-24T11:22:13.826782}]
+?[1;31m
+Start test 76?[0m
+?[1;31m
+Start test 77?[0m
+fuck code at pos: 10
+fuck record: Optional[CodeResponse{code='Snippet #11', date=2020-12-24T11:22:13.839132}]
+?[1;31m
+Start test 78?[0m
+?[1;31m
+Start test 79?[0m
+fuck code at pos: 11
+fuck record: Optional[CodeResponse{code='Snippet #12', date=2020-12-24T11:22:13.853406}]
+?[1;31m
+Start test 80?[0m
+?[1;31m
+Start test 81?[0m
+fuck code at pos: 12
+fuck record: Optional[CodeResponse{code='Snippet #13', date=2020-12-24T11:22:13.866414}]
+?[1;31m
+Start test 82?[0m
+?[1;31m
+Start test 83?[0m
+fuck code at pos: 13
+fuck record: Optional[CodeResponse{code='Snippet #14', date=2020-12-24T11:22:13.882549}]
+?[1;31m
+Start test 84?[0m
+?[1;31m
+Start test 85?[0m
+fuck get top 10
+?[1;31m
+Start test 86?[0m
+fuck get top 10
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,10 +1,7 @@
 
-U	java:S106;"9Replace this use of System.out or System.err by a logger.(Õ¹äù8®ÛÏÜç.
-U	java:S106<"9Replace this use of System.out or System.err by a logger.(×È»Ÿ8®ÛÏÜç.
-U	java:S106="9Replace this use of System.out or System.err by a logger.(µóû¼8®ÛÏÜç.
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ŠÅÜç.
-Z	java:S106W"9Replace this use of System.out or System.err by a logger.(ç“Ìóÿÿÿÿÿ8ğ‡ÏÛç.
-h
-java:S1128"FRemove this unused import 'java.util.concurrent.atomic.AtomicInteger'.(¿êäœøÿÿÿÿ8ŒÚòÜç.
-Z	java:S106_"9Replace this use of System.out or System.err by a logger.(ç“Ìóÿÿÿÿÿ8³ªÏÛç.
+[
+java:S4684x"@Replace this persistent entity with a simple POJO or DTO object.(ğ•±ôùÿÿÿÿ
+[
+java:S4684l"@Replace this persistent entity with a simple POJO or DTO object.(ü®Öóúÿÿÿÿ
+m
+java:S1858W"K"getCodeAtPostJson" returns a string, there's no need to call "toString()".(×É›¦ùÿÿÿÿ8ëªµé.
