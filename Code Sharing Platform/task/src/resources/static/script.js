@@ -1,14 +1,13 @@
 const send = async () => {
     const code = {
-        "code": document.getElementById("code_snippet").value
+        "code": document.getElementById("code_snippet").value,
+        "time": document.getElementById("time_restriction").value,
+        "views" : document.getElementById("views_restriction").value
     }
     const json = JSON.stringify(code);
     await fetch("/api/code/new", {
         method: 'POST',
-        body: json,
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        body: json
     })
         .then(response => response.json())
         .then(jsonResponse => jsonResponse)
